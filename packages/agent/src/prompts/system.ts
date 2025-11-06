@@ -39,6 +39,11 @@ export const system = () => {
   - \`id\`: Unique element identifier.
   - \`attrs\`: Element properties.
 
+  ### Referencing Elements
+  When an element attribute accepts another element (like a Point, Circle, etc.), you can reference a previously drawn element by its ID using the syntax: \`"use(element_id)"\`
+
+  This allows you to build upon what you've already drawn - for example, drawing a line between two named points, or creating a circle through a specific point.
+
   ## Canvas Elements
 
   ${Array.from(docs.map((document) => contential(document))).join('\n')}

@@ -6,7 +6,7 @@ export default registerCanvasElementDocument({
   attrs: [
     {
       name: 'points',
-      description: 'Array of points to create the spline through, each point is a tuple like [x, y]',
+      description: 'Array of points to create the spline through, each point can be a tuple like [x, y] or a Point element',
       required: true,
     },
     {

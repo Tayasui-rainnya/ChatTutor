@@ -1,9 +1,10 @@
+import type { Point } from 'jsxgraph'
 import { defineElement } from '../element-structor'
 
 export interface ArcAttributes {
-  center: [number, number]
-  from: [number, number]
-  to: [number, number]
+  center: [number, number] | Point
+  from: [number, number] | Point
+  to: [number, number] | Point
   color?: string
 }
 

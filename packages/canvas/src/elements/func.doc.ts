@@ -14,5 +14,10 @@ export default registerCanvasElementDocument({
       description: 'The domain of the function, a number tuple like [min, max]',
       required: false,
     },
+    {
+      name: 'color',
+      description: 'The color of the function',
+      required: false,
+    },
   ],
 })

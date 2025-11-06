@@ -1,7 +1,8 @@
+import type { Point } from 'jsxgraph'
 import { defineElement } from '../element-structor'
 
 export interface CardinalsplineAttributes {
-  points: Array<[number, number]>
+  points: Array<[number, number] | Point>
   tau?: number
   color?: string
 }

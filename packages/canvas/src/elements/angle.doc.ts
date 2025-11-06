@@ -6,17 +6,17 @@ export default registerCanvasElementDocument({
   attrs: [
     {
       name: 'point1',
-      description: 'The first point of the angle, a number tuple like [x, y]',
+      description: 'The first point of the angle, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {
       name: 'point2',
-      description: 'The vertex point of the angle, a number tuple like [x, y]',
+      description: 'The vertex point of the angle, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {
       name: 'point3',
-      description: 'The third point of the angle, a number tuple like [x, y]',
+      description: 'The third point of the angle, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {

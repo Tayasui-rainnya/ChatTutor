@@ -1,9 +1,10 @@
+import type { Point } from 'jsxgraph'
 import { defineElement } from '../element-structor'
 
 export interface AngleAttributes {
-  point1: [number, number]
-  point2: [number, number]
-  point3: [number, number]
+  point1: [number, number] | Point
+  point2: [number, number] | Point
+  point3: [number, number] | Point
   radius?: number | 'auto'
   type?: 'sector' | 'square' | 'none'
   color?: string

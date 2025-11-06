@@ -6,13 +6,18 @@ export default registerCanvasElementDocument({
   attrs: [
     {
       name: 'from',
-      description: 'The start point of the line, a number tuple like [x, y]',
+      description: 'The start point of the line, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {
       name: 'to',
-      description: 'The end point of the line, a number tuple like [x, y]',
+      description: 'The end point of the line, a number tuple like [x, y] or a Point element',
       required: true,
+    },
+    {
+      name: 'color',
+      description: 'The color of the line',
+      required: false,
     },
   ],
 })

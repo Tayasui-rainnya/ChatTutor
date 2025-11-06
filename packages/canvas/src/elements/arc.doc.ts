@@ -6,17 +6,17 @@ export default registerCanvasElementDocument({
   attrs: [
     {
       name: 'center',
-      description: 'The center point of the arc, a number tuple like [x, y]',
+      description: 'The center point of the arc, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {
       name: 'from',
-      description: 'The starting point of the arc on the circle, a number tuple like [x, y]',
+      description: 'The starting point of the arc on the circle, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {
       name: 'to',
-      description: 'The ending point of the arc on the circle, a number tuple like [x, y]',
+      description: 'The ending point of the arc on the circle, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {

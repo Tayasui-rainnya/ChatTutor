@@ -6,12 +6,12 @@ export default registerCanvasElementDocument({
   attrs: [
     {
       name: 'center',
-      description: 'The center point of the circle, a number tuple like [x, y]',
+      description: 'The center point of the circle, a number tuple like [x, y] or a Point element',
       required: true,
     },
     {
       name: 'radius',
-      description: 'The radius of the circle',
+      description: 'The radius of the circle: a number, a Point element (distance from center to that point), or a Circle element (same radius)',
       required: true,
     },
     {

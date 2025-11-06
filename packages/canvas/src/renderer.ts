@@ -33,10 +33,26 @@ export const createCanvasRenderer = (id: string, options: CanvasRendererOptions)
     return pool.get(id) as T
   }
 
+  const processAttrs = (attrs: object) => {
+    return Object.fromEntries(Object.entries(attrs).map(([key, value]) => {
+      if (typeof value === 'string') {
+        if (value.trim().startsWith('use(') && value.trim().endsWith(')')) {
+          const id = value.trim().slice(4, -1)
+          const element = getElement(id)
+          if (element) {
+            return [key, element]
+          }
+        }
+        return [key, value]
+      }
+      return [key, value]
+    }))
+  }
+
   const add = (action: typeof ElementAction.infer) => {
     const element = elements.get(action.options.name)
     if (element) {
-      const setup = element(action.options.attrs, getElement)
+      const setup = element(processAttrs(action.options.attrs), getElement)
       pool.set(action.options.id, setup(board))
     }
   }

@@ -19,5 +19,15 @@ export default registerCanvasElementDocument({
       description: 'The name of the point, support latex',
       required: true,
     },
+    {
+      name: 'color',
+      description: 'The color of the point',
+      required: false,
+    },
+    {
+      name: 'static',
+      description: 'Whether the point is static, by default, it is dynamic that user can drag it',
+      required: false,
+    },
   ],
 })

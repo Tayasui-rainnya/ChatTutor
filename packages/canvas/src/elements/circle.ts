@@ -1,8 +1,9 @@
+import type { Circle, Point } from 'jsxgraph'
 import { defineElement } from '../element-structor'
 
 export interface CircleAttributes {
-  center: [number, number]
-  radius: number
+  center: [number, number] | Point
+  radius: number | Point | Circle
   color?: string
 }
 

@@ -31,11 +31,15 @@ ChatTutor effectively solves this problem by bringing all the teaching tools use
 ## Features
 
 - [x] Math Canvas
+![Math Canvas](./public/demo1.png)
 - [ ] Code Page
 - [ ] Mindmap
 - [ ] Physics Canvas
 - [ ] Digital Logic Canvas
 - [ ] Problem Solving created by AI to user
+
+## Roadmap
+Please refer to our [Roadmap v0.1](https://github.com/sheepbox8646/ChatTutor/issues/1) for the detailed roadmap
 
 ## Quick Start
 
@@ -73,7 +77,7 @@ pnpm dev
 
 ## Projects Used on Core Features
 
-- [xsai](https://github.com/moeru-ai/xsai): Extra-small AI SDK. Provide easy-to-use AI SDK for ChalkAI.
+- [xsai](https://github.com/moeru-ai/xsai): Extra-small AI SDK.
 - [jsxgraph](https://jsxgraph.org/): Interactive geometry, function plotting, and data visualization library.
 
 ---
